@@ -22,7 +22,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
-    preflightContinue: true,
+    preflightContinue: false,
     optionsSuccessStatus: 200,
 }));
 
