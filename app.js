@@ -17,13 +17,13 @@ import { errorMiddleware } from './middlewares/errorMiddleware.js'
 
 const app = express();
 app.use(cors({
-    // origin: ["https://4wheel-admin-frontend.netlify.app", "https://4-wheel.netlify.app"],
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: ["https://4wheel-admin-frontend.netlify.app", "https://4-wheel.netlify.app"],
+    // origin: ['http://localhost:5173', 'http://localhost:5174'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
     preflightContinue: true,
-    optionsSuccessStatus:200,
+    optionsSuccessStatus: 200,
 }));
 
 cloudinary.config({
